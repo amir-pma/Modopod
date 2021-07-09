@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ECommerce</title>
+    <base href="~/" />
+    <link rel="stylesheet" href="~/assets/css/override.css">
+    <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+    </environment>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://unpkg.com/merge-images"></script>
+    <style>
+        body {
+            font-family: 'IranSans';
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="~/assets/css/select.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="~/assets/css/select.js"></script>
+</head>
+<body>
+    @RenderBody()
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="~/dist/vendor.js" asp-append-version="true"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
